@@ -15,6 +15,7 @@ export function TaskList() {
     const [newTaskTitle, setNewTaskTitle] = useState("")
 
     function handleCreateNewTask() {
+        if (!newTaskTitle) return
         const max = 1000
         const min = 1
         const newTask = {
